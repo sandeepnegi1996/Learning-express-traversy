@@ -20,6 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 //this route get all members
 
 app.use("/api/members", require("./routes/api/members"));
+
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
